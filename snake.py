@@ -56,7 +56,7 @@ class Snake:
             if self.steps_without_eating > self.HUNGER_TH:
                 self.hungry = True
             else:
-                self.hyngry = False
+                self.hungry = False
 
     
     # Moves the snake following the velocity, if move hits wall, snake dies

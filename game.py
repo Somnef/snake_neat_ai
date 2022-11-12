@@ -92,7 +92,7 @@ class Game:
 
 
     # Draw all what is to be drawn on screen
-    @jit(target_backend ="cuda")		
+    # @jit(target_backend ="cuda")
     def draw(self, generation=None, max_size = None, general_max_size = None):
         fill_color = [0, 0, 0]
         self.win.fill(fill_color)

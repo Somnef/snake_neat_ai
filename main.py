@@ -74,10 +74,11 @@ def replay_genome(config_path, genome_path):
     game.general_max_size = 0
     game.run_neat(genomes, config)
 
+
 if __name__ == '__main__':
     local_dir = os.path.dirname(__file__)
     config_path = os.path.join(local_dir, 'config-feedforward.txt')
     winner_path = os.path.join(local_dir, 'winner.pkl')
 
-    run(config_path, winner_path, nb_runs = 1000)
+    run(config_path, winner_path, nb_runs = 5000)
     # replay_genome(config_path, winner_path)
